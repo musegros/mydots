@@ -25,10 +25,9 @@ set foldnestmax=10
 nnoremap <space> za
 set foldmethod=indent
 
-" turn off search
+" turn off search with \space
 nnoremap <leader><space> :nohlsearch<CR>
 autocmd FileType python map <buffer> <F9> :w<CR>:exec '!python3' shellescape(@%, 1)<CR>
 autocmd FileType python imap <buffer> <F9> <esc>:w<CR>:exec '!python3' shellescape(@%, 1)<CR>
-:inoremap jkl <Esc>
 :nnoremap <silent> <F7> :w<BAR>make %<<BAR>silent !mv %< 1%<<CR>
 :nnoremap <F8> :!./1%<<cr>
