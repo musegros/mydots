@@ -1,4 +1,4 @@
 #!/bin/sh
 
-echo source ~/mydots/.vimrc >> ../.vimrc
-cp -r .vim ../
+echo source $(pwd)/.vimrc >> ~/.vimrc
+cp -r .vim ~/

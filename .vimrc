@@ -27,6 +27,7 @@ set foldmethod=indent
 
 " turn off search with \space
 nnoremap <leader><space> :nohlsearch<CR>
+inoremap jkl <Esc>
 autocmd FileType python map <buffer> <F9> :w<CR>:exec '!python3' shellescape(@%, 1)<CR>
 autocmd FileType python imap <buffer> <F9> <esc>:w<CR>:exec '!python3' shellescape(@%, 1)<CR>
 :nnoremap <silent> <F7> :w<BAR>make %<<BAR>silent !mv %< 1%<<CR>
